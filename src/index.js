@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render( 
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
        <Switch>
         <Route exact path='/' component={App}/>
         <Route path='/search' component={Search}/>

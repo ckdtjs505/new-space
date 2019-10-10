@@ -15,9 +15,9 @@ export default class main extends React.Component {
             <h2 style ={{ textAlign : "center", color : "white"}}>New space는 우주에 관련된 정보를 제공합니다</h2>
         </div>
         <div style = {{paddingTop : "5rem",  width : "55rem", margin : "auto", display : "flex", justifyContent : "space-between"}}>
-            <Link to = "/simulation" style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
-            <Link to = "/search" style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
-            <Link to = "/search" style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
+            <Link to = {process.env.PUBLIC_URL + "/simulation"} style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
+            <Link to = {process.env.PUBLIC_URL + "/search"} style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
+            <Link to = {process.env.PUBLIC_URL + "/search"} style = {{width : "250px", height : "400px", backgroundColor : "rgba(255,255,225, 0.7)", border : "3px solid white"}}></Link>
         </div>
       </div>
     );

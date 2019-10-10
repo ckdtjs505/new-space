@@ -23,7 +23,7 @@ export default class Example extends React.Component {
     return (
       <div style={{ maxWidth : "100%", backgroundColor : "black"}}>
         <Navbar style={{maxWidth : "90%", margin : "auto", padding : "0"}} dark expand="md">
-          <NavbarBrand  tag={Link} to={process.env.PUBLIC_URL + "/"}>New space</NavbarBrand>
+          <NavbarBrand  tag={Link} to={"/"}>New space</NavbarBrand>
         </Navbar>
       </div>
     );

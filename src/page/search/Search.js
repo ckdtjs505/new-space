@@ -40,13 +40,13 @@ class Search extends React.Component {
 		this.toggle = this.toggle.bind(this);
     }
 
-	componentDidMount() {
-		fetch('/api/account/id').then(({ data }) => {
-			this.setState({
-				userId: data
-			});
-		});
-	}
+	// componentDidMount() {
+	// 	fetch('/api/account/id').then(({ data }) => {
+	// 		this.setState({
+	// 			userId: data
+	// 		});
+	// 	});
+	// }
 	
 	toggle() {
 		this.setState(prevState => ({

@@ -2,12 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import BackgroundImg from '../../back.jpg';
 export default class main extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  
   render() {
-
     return ( 
       <div style={{  height : '972px',  backgroundPosition: "center", background : `url(${BackgroundImg})` , backgroundSize : "cover" }}>
         <div  style = {{ paddingTop : "8rem", marign : "auto"}}>

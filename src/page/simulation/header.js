@@ -6,16 +6,12 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
-
+    console.log(process.env.PUBLIC_URL);
     this.toggle = this.toggle.bind(this);
     this.state = {
       lin : process.env.PUBLIC_URL + '/',

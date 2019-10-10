@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputGroup, Input,  Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
-import style from './style.css';
+import './style.css';
 
 class Search extends React.Component {
 	constructor(props) {
@@ -39,14 +39,6 @@ class Search extends React.Component {
 		};
 		this.toggle = this.toggle.bind(this);
     }
-
-	// componentDidMount() {
-	// 	fetch('/api/account/id').then(({ data }) => {
-	// 		this.setState({
-	// 			userId: data
-	// 		});
-	// 	});
-	// }
 	
 	toggle() {
 		this.setState(prevState => ({
@@ -65,7 +57,6 @@ class Search extends React.Component {
         fetch(url)
         .then(header => header.json())
 		.then(data => { 
-			
 			this.setState({
 				data : data.collection.items,
 				img : { 
@@ -80,15 +71,7 @@ class Search extends React.Component {
 			this.handleImg(this.state.data);
         })
         .catch(function(err) {
-			console.log(err);
-			// if(err.response.status === 400){
-			// 	alert('Bad Requst');
-			// }else if( err.response.status == 404){
-			// 	alert('Not Found');
-			// }else {
-			// 	alert('server Error');
-			// }
-			
+			console.log(err);			
 		})
 	}
 	
@@ -99,7 +82,7 @@ class Search extends React.Component {
             .then( header => header.json())
 			.then( img => {
 				count++;
-				if(count % 2 != 0){
+				if(count % 2 !== 0){
 					this.setState({
 						img : {
 							title : this.state.img.title.concat(ele.data[0].title),
@@ -154,13 +137,13 @@ class Search extends React.Component {
 		}
 		const imglist = this.state.img.href.map(  
 			(img, index) => ( 
-					<img key={index} className="img" src={img} onClick={ () => imgclick1(index)} ></img>
-				)
+				<img key={index} alt="이미지가 없습니다" className="img" src={img} onClick={ () => imgclick1(index)} ></img>
+			)
 		);
 		const imglist2 = this.state.img2.href.map(  
 			(img2, index) => ( 
-					<img key={index} className="img" src={img2} onClick={ () => imgclick2(index)}></img>
-				)
+				<img key={index} alt="이미지가 없습니다" className="img" src={img2} onClick={ () => imgclick2(index)}></img>
+			)
 		);
 		const { userId } = this.state;
 		const { title } = this.state.img;
@@ -177,7 +160,7 @@ class Search extends React.Component {
 					</div>
 				</div>
 				{	
-					title.length ==0	?
+					title.length === 0	?
 					<div className="thumnails">
 						<div className="no_thumnails_content">
 							<h1>죄송합니다. 검색결과가 없습니다.</h1>
@@ -205,11 +188,11 @@ class Search extends React.Component {
 					<Modal isOpen={this.state.modal} toggle={this.toggle} style={{maxWidth: '1000px', width: '95%', marginTop : '5rem', marginBottom: '5rem',  textAlign: 'center'}}>
 						<ModalHeader toggle={this.toggle}>{this.state.nimg.title}</ModalHeader>
 						<ModalBody>
-							<img  className="img" src={this.state.nimg.href} ></img>
+							<img  className="img" alt="이미지가 없습니다" src={this.state.nimg.href} ></img>
 						</ModalBody>
 						<ModalFooter>  
 							{
-								userId == '' ?
+								userId === '' ?
 								<Button color="secondary" onClick={this.toggle}>종료</Button>
 								:
 								<div>

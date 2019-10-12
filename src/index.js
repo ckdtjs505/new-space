@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import App from './App';
+import App from './page/main/main';
 import Search from './page/search/main';
 import Simulation from './page/simulation/main';
 import 'bootstrap/dist/css/bootstrap.min.css';

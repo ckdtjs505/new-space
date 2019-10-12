@@ -1,69 +1,29 @@
-.search {
-	display: flex;
-	height: 20rem;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	background : url('https://source.unsplash.com/CzigtQ8gPi4');
+.main {
+	height : 972px;
+	background-position: center;
+	background : url('../../back.jpg'); 
 	background-size : cover;
 }
 
-.search_content {
-	display: flex;
-	flex-direction: column;
-	align-items : center;
-	margin-top : 5.5rem;
-	width : 100%;
-	vertical-align: middle;
-	color: white;
+.title {
+	padding-top : 8rem;
+	text-align : center;
+	color : white;
 }
 
-
-.search_box {
-	margin-top : 1.2rem;
-	width : 30rem  !important;
-}
-
-
-.thumnails{
-	max-width : 68rem;
-	margin:0 auto;
-}
-
-.thumnails_content {
+.tap {
+	padding-top : 5rem;
+	width : 55rem;
+	margin : auto;
 	display : flex;
-	text-align:center;
-	margin-top: 2rem;
-	margin-right: 1rem;
-	margin-left: 1rem;
-	margin-bottom: 2rem;
-}
-.no_thumnails_content {
-	display : flex;
-	flex-direction: column;
-	text-align:center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	justify-Content : space-between;
 }
 
-.img {
-	flex-grow : 1;
-	width : 98%;
-	margin-left : 0.25rem;
-	margin-right : 0.25rem;
-	margin-bottom : 0.5rem;
+.tap_content {
+	width : 250px;
+	height : 400px;
+	background-color : rgba(255,255,225, 0.7);
+	border : 3px solid white;
+	color : gray;
+	text-align: center;
 }
-
-
-@media screen and (max-width: 500px) {
-    .thumnails_content {
-		display : block;
-	}
-	.search_box {
-		margin-top : 1.2rem;
-		width : 20rem;
-	}
-	.h1 {
-		font-size :1.7em;
-	}
-}
-

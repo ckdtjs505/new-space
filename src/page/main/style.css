@@ -17,13 +17,35 @@
 	margin : auto;
 	display : flex;
 	justify-Content : space-between;
+	
+}
+
+.tap :hover {
+	color :red;
+	mask-image: url("https://source.unsplash.com/rTZW4f02zY8");
+	background-size: cover;
+	text-decoration: none;
 }
 
 .tap_content {
 	width : 250px;
 	height : 400px;
-	background-color : rgba(255,255,225, 0.7);
+	background-color : rgba(125,125,125, 0.7);
 	border : 3px solid white;
 	color : gray;
+	color: black;
 	text-align: center;
+}
+
+.tap_title {
+	margin-top: 6rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+.tap_subtitle {
+	margin-top: 1rem;
+}
+.icon {
+	width : 25%;
+	height: 25%;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './style.css';
-import {IoIosRocket, GiEarthAmerica, IoIosSearch} from 'react-icons/all'
+import {IoIosRocket, GiEarthAmerica, IoIosSearch, FaRegBell} from 'react-icons/all'
+import StarfieldAnimation from 'react-starfield-animation'
 
 function Newspace () {
   return ( 
@@ -33,6 +34,19 @@ function Newspace () {
             </div>
           </Link>
       </div>
+      <StarfieldAnimation
+          numParticles={350}
+          lineWidth ={1.0}
+          style={{
+            position: 'absolute',
+            zIndex: 0,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+
+          }}
+        />
     </div>
   );
 }

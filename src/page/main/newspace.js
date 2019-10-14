@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './style.css';
-import {IoIosRocket, GiEarthAmerica, IoIosSearch, FaRegBell} from 'react-icons/all'
+import {IoIosRocket, GiEarthAmerica, IoIosSearch} from 'react-icons/all'
 import StarfieldAnimation from 'react-starfield-animation'
 
 function Newspace () {

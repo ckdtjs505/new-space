@@ -20,7 +20,7 @@ function Header() {
               <NavLink tag={Link} to={"/search"} style={{width : "10rem", color : "white", textAlign: "center" , backgroundColor : "red"}} >우주 검색</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{width : "10rem", textAlign: "center"}}>신우주항공</NavLink>
+              <NavLink tag={Link} to={"/newspace"} style={{width : "10rem", textAlign: "center"}}>신우주항공</NavLink>
             </NavItem>
           </Nav>
       </Navbar>

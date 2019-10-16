@@ -26,7 +26,7 @@ function Newspace () {
               <h4 className="tap_subtitle"> 우주 이미지 <br/> 무료로 다운로드</h4>
             </div>
           </Link>
-          <Link to = {"/search"} className="tap_content" >
+          <Link to = {"/newspace"} className="tap_content" >
           <div>
               <h3 className="tap_title">신우주항공</h3>
                <IoIosRocket className="icon"></IoIosRocket>

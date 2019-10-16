@@ -6,6 +6,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './page/main/main';
 import Search from './page/search/main';
 import Simulation from './page/simulation/main';
+import Newspace from './page/newspace/main'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -16,6 +18,7 @@ ReactDOM.render(
         <Route exact path='/' component={App}/>
         <Route path='/search' component={Search}/>
         <Route path='/simulation' component={Simulation}/>
+        <Route path='/newspace' component={Newspace}/>
       </Switch>
     </BrowserRouter>, document.getElementById('root'));
 

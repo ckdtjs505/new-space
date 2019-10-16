@@ -1,7 +1,6 @@
 .newspace_main {
 	display: flex;
 	height : 972px;
-	background : url('../../universe.jpg');
+	background : url('https://source.unsplash.com/tqzqzH8hb5A');
 	background-size : cover;
 }
-

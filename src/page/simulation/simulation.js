@@ -1,9 +1,10 @@
 import React from 'react';
+import './style.css';
 
 function Simulation(){
 	return (
-		<div style ={{textAlign : "center", backgroundColor : "black"}}> 
-			<iframe src="https://www.solarsystemscope.com/iframe" width="1000" height="900" title="우주 시뮬레이션" style= {{minWidth: "500px" ,minHeight: "400px", border: "2px solid black"}}></iframe>
+		<div className = "simulation_main" > 
+			<iframe src="https://www.solarsystemscope.com/iframe" width="100%" height="885" title="우주 시뮬레이션" style= {{ border: "0.2px solid black"}}></iframe>
 		</div>
 	);
 }

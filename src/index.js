@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 
 import App from './page/main/main';
 import Search from './page/search/main';
@@ -13,14 +13,14 @@ import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render( 
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
        <Switch>
         <Route exact path='/' component={App}/>
-        <Route path='/search' component={Search}/>
-        <Route path='/simulation' component={Simulation}/>
-        <Route path='/newspace' component={Newspace}/>
+        <Route path={'/search'} component={Search}/>
+        <Route path={'/simulation'} component={Simulation}/>
+        <Route path={'/newspace'} component={Newspace}/>
       </Switch>
-    </BrowserRouter>, document.getElementById('root'));
+    </HashRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

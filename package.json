@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://ckdtjs505.github.io/new-space",
+  "homepage": "https://ckdtjs505.github.io/",
   "eslintConfig": {
     "extends": "react-app"
   },

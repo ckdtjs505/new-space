@@ -1,3 +1,4 @@
+
 .main {
 	height : 972px;
 	background-position: center;
@@ -15,13 +16,11 @@
 .tap {
 	font-family: 'Sunflower', sans-serif;
 	padding-top : 5rem;
-	width : 55rem;
+	width : 95%;
 	margin : auto;
-	display : flex;
+	display: flex;
 	justify-Content : space-between;
-	
 }
-
 .tap :hover {
 	z-index: 1;
 	color :red;
@@ -31,7 +30,7 @@
 
 .tap_content {
 	z-index: 1;
-	width : 250px;
+	width : 32%;
 	height : 400px;
 	background-color : rgba(125,125,125, 0.7);
 	border : 3px solid white;
@@ -39,7 +38,6 @@
 	color: black;
 	text-align: center;
 }
-
 .tap_title {
 	margin-top: 6rem;
 	margin-bottom: 1rem;
@@ -51,4 +49,48 @@
 .icon {
 	width : 25%;
 	height: 25%;
+}	
+@media screen and (min-width: 768px){
+
+	.tap {
+		font-family: 'Sunflower', sans-serif;
+		padding-top : 5rem;
+		width : 55rem;
+		margin : auto;
+		display : flex;
+		flex-direction: row;
+		justify-Content : space-between;
+		
+	}
+	
+	.tap :hover {
+		z-index: 1;
+		color :red;
+		background-color: black;
+		text-decoration: none;
+	}
+	
+	.tap_content {
+		z-index: 1;
+		width : 250px;
+		height : 400px;
+		background-color : rgba(125,125,125, 0.7);
+		border : 3px solid white;
+		color : gray;
+		color: black;
+		text-align: center;
+	}
+	
+	.tap_title {
+		margin-top: 6rem;
+		margin-bottom: 1rem;
+		font-weight: bold;
+	}
+	.tap_subtitle {
+		margin-top: 1rem;
+	}
+	.icon {
+		width : 25%;
+		height: 25%;
+	}	
 }

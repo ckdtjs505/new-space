@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputGroup, Input, Button } from 'reactstrap';
+import { InputGroup, Input, Button, Spinner  } from 'reactstrap';
 import Testimg from '../../components/img';
 import './style.css';
 
@@ -9,10 +9,8 @@ class Search extends React.Component {
 		this.state = {
 			search : 'seoul',
 			data : [],
-			collectImg : [],
-			prevImag : [],
-			title : [],
 			loading : false,
+			error : false,
 		};
     }
 	
@@ -25,35 +23,31 @@ class Search extends React.Component {
 			search: e.target.value
 		})
 	}
-	
+
+
 	handleSearch = () => {
 		const url = `https://images-api.nasa.gov/search?q=${this.state.search}&media_type=image`;
-		this.setState({  // 초기화
-			img : { 
-				title : [],
-				href : []
-			},
-			img2 : { 
-				title : [],
-				href : []
-			},
+		this.setState({
+			loading : true,
+			error : false,
 		})
         fetch(url)  // REST API 호출
-			.then(header => header.json())
+			.then(response => response.json())
 			.then(data => { 
 				this.setState({
 					data : data.collection.items,
 					loading : false
 				})
 			})
-			.catch(function(err) {
-				console.log(err);			
+			.catch(err => {
+				console.log('[requset failed]', err);
 			})
+			
 	}
 	
 	
 	render() {
-		const {loading} = this.state;
+		const {loading, data, error} = this.state;
 		return (
 			<div> 
 				<div className="search">
@@ -65,17 +59,24 @@ class Search extends React.Component {
 							<Button type="button" onClick={this.handleSearch} > 검색 </Button>
 						</InputGroup>
 					</div>
-				</div>
+				</div>	
 				{	
-					loading === true	?
+					loading === true ?
 					<div className="thumnails">
 						<div className="no_thumnails_content">
-							<h1>죄송합니다. 검색결과가 없습니다.</h1>
-							<div>
-								<div>맞춤법이 올바른지 확인해주세요.</div>
-								<div>언어는 영어만 가능해요.</div>
-								<div>동의어 또는 일반적인 용어를 사용하세요.</div>
-							</div>
+							<Spinner style={{ width: '3rem', height: '3rem' }} />{' '}
+							<br></br>
+							<p> 로딩중 입니다 <br/>
+							잠시만 기다려주세요</p>
+						</div>
+					</div>
+					:
+					(data.length === 0 || error === true) ? 
+					<div className="thumnails">
+						<div className="no_thumnails_content">
+							<img alt ="" src={require('./girl.png')}></img>
+							<div>죄송합니다 </div>
+							<div>데이터를 찾을 수 없습니다 </div>
 						</div>
 					</div>
 					:

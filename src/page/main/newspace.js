@@ -8,8 +8,8 @@ function Newspace () {
   return ( 
     <div className="main">
       <div  className = "title">
-          <h1>신우주항공을 탐험하다</h1>
-          <h2>New space는 우주에 관련된 정보를 제공합니다</h2>
+          <div className ="title_title">신우주항공을 탐험하다</div>
+          <div className ="title_subtitle">New space는 우주에 관련된 정보를 제공합니다</div>
       </div>
       <div className="tap">
           <Link to = {"/simulation"} className="tap_content" >

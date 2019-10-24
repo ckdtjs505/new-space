@@ -1,6 +1,10 @@
+body > #root > div {
+	height: 100vh;
+  }
 
 .main {
-	height : 972px;
+	width : 100%;
+	height : 100%;
 	background-position: center;
 	background : url('../../back.jpg'); 
 	background-size : cover;
@@ -8,14 +12,20 @@
 
 .title {
 	font-family: 'Sunflower', sans-serif;
-	padding-top : 8rem;
+	padding-top : 5rem;
 	text-align : center;
 	color : white;
 }
 
+.title_title{
+	font-size: 2em;
+}
+.title_subtitle {
+	font-size: 1em;
+}
 .tap {
 	font-family: 'Sunflower', sans-serif;
-	padding-top : 5rem;
+	padding-top : 3.5rem;
 	width : 95%;
 	margin : auto;
 	display: flex;
@@ -31,7 +41,7 @@
 .tap_content {
 	z-index: 1;
 	width : 32%;
-	height : 400px;
+	height : 300px;
 	background-color : rgba(125,125,125, 0.7);
 	border : 3px solid white;
 	color : gray;
@@ -39,19 +49,30 @@
 	text-align: center;
 }
 .tap_title {
-	margin-top: 6rem;
+	margin-top: 5.5rem;
 	margin-bottom: 1rem;
+	font-size: 1.2em;
 	font-weight: bold;
 }
 .tap_subtitle {
 	margin-top: 1rem;
+	font-size: 1em;
 }
 .icon {
 	width : 25%;
 	height: 25%;
 }	
-@media screen and (min-width: 768px){
 
+@media screen and (min-width: 768px){
+	.title {
+		padding-top : 10rem;
+	}
+	.title_title{
+		font-size: 2.5em;
+	}
+	.title_subtitle {
+		font-size: 2em;
+	}
 	.tap {
 		font-family: 'Sunflower', sans-serif;
 		padding-top : 5rem;
@@ -84,9 +105,11 @@
 	.tap_title {
 		margin-top: 6rem;
 		margin-bottom: 1rem;
+		font-size: 2em;
 		font-weight: bold;
 	}
 	.tap_subtitle {
+		font-size: 1.5em;
 		margin-top: 1rem;
 	}
 	.icon {

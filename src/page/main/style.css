@@ -1,6 +1,6 @@
 body > #root > div {
 	height: 100vh;
-  }
+}
 
 .main {
 	width : 100%;
@@ -12,17 +12,19 @@ body > #root > div {
 
 .title {
 	font-family: 'Sunflower', sans-serif;
-	padding-top : 5rem;
+	padding-top : 10rem; 
 	text-align : center;
 	color : white;
 }
 
 .title_title{
+	font-size: 2.5em;
+}
+
+.title_subtitle {
 	font-size: 2em;
 }
-.title_subtitle {
-	font-size: 1em;
-}
+
 .tap {
 	font-family: 'Sunflower', sans-serif;
 	padding-top : 3.5rem;
@@ -31,6 +33,7 @@ body > #root > div {
 	display: flex;
 	justify-Content : space-between;
 }
+
 .tap :hover {
 	z-index: 1;
 	color :red;
@@ -41,79 +44,78 @@ body > #root > div {
 .tap_content {
 	z-index: 1;
 	width : 32%;
-	height : 300px;
+	height : 400px;
 	background-color : rgba(125,125,125, 0.7);
 	border : 3px solid white;
 	color : gray;
 	color: black;
 	text-align: center;
 }
+
 .tap_title {
-	margin-top: 5.5rem;
+	margin-top: 6rem;
 	margin-bottom: 1rem;
-	font-size: 1.2em;
+	font-size: 2em;
 	font-weight: bold;
 }
 .tap_subtitle {
+	font-size: 1.5em;
 	margin-top: 1rem;
-	font-size: 1em;
 }
 .icon {
 	width : 25%;
 	height: 25%;
 }	
-
-@media screen and (min-width: 768px){
+	
+/* 모바일에서 동작 시 */
+@media screen and (max-width: 450px){ 
+	
 	.title {
-		padding-top : 10rem;
+		padding-top : 5rem;
 	}
 	.title_title{
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 	.title_subtitle {
-		font-size: 2em;
+		font-size: 1em;
 	}
 	.tap {
 		font-family: 'Sunflower', sans-serif;
-		padding-top : 5rem;
-		width : 55rem;
+		padding-top : 3.5rem;
+		width : 95%;
 		margin : auto;
-		display : flex;
-		flex-direction: row;
+		display: flex;
 		justify-Content : space-between;
-		
-	}
-	
-	.tap :hover {
-		z-index: 1;
-		color :red;
-		background-color: black;
-		text-decoration: none;
 	}
 	
 	.tap_content {
 		z-index: 1;
-		width : 250px;
-		height : 400px;
+		width : 32%;
+		height : 300px;
 		background-color : rgba(125,125,125, 0.7);
 		border : 3px solid white;
 		color : gray;
 		color: black;
 		text-align: center;
 	}
-	
 	.tap_title {
-		margin-top: 6rem;
+		margin-top: 5.5rem;
 		margin-bottom: 1rem;
-		font-size: 2em;
+		font-size: 1.2em;
 		font-weight: bold;
 	}
 	.tap_subtitle {
-		font-size: 1.5em;
 		margin-top: 1rem;
+		font-size: 1em;
 	}
-	.icon {
-		width : 25%;
-		height: 25%;
-	}	
+
+}
+
+/* 데스크탑에서 동작 시 (넓은 화면)*/
+@media screen and (min-width: 975px){
+	.tap {
+		width : 55rem;
+		margin : auto;
+		justify-Content : space-between;
+	}
 }

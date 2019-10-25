@@ -52,10 +52,10 @@ class Search extends React.Component {
 			<div> 
 				<div className="search">
 					<div className="search_content">
-						<h1 className="h1" >NASA Search Web </h1>
-						<div>나사에서 제공되는 이미지를 무료로 살펴보세요</div>
+						<h1 className="search-title" >NASA Search Web </h1>
+						<div className="search-subtitle">나사에서 제공되는 이미지를 무료로 살펴보세요</div>
 						<InputGroup className ="search_box">
-							<Input  style={{width: '10rem' }} onChange={this.handleChange}  value= {this.state.search} />
+							<Input  onChange={this.handleChange}  value= {this.state.search} />
 							<Button type="button" onClick={this.handleSearch} > 검색 </Button>
 						</InputGroup>
 					</div>

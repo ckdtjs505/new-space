@@ -1,32 +1,30 @@
-
 .navLink {
 	text-align: center;
 }
 
+/* 
+ 19.10.25 (search, search_content, search_box)   
+ [코드 리펙토링] - 불필요한 코드 수정
+ - display : block 상태에서의 가운데 정렬 
+ - selecter : selecter naming   
+ 유튜브 : VEAMCAMP 참고 ( https://www.youtube.com/watch?v=iP8CqsSdXT0&list=PLMv8nY90ATZWQ5fbLJIdGB6ujWlUB37qa&index=2)
+*/
 
 .search {
-	display: flex;
 	height: 20rem;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
 	background : url('https://source.unsplash.com/CzigtQ8gPi4');
 	background-size : cover;
 }
 
 .search_content {
-	display: flex;
-	flex-direction: column;
-	align-items : center;
-	margin-top : 5.5rem;
-	width : 100%;
-	vertical-align: middle;
+	padding-top: 5.5rem;
+	text-align: center;
 	color: white;
 }
 
-
 .search_box {
-	margin-top : 1.2rem;
 	width : 30rem  !important;
+	margin: 1.2rem auto;
 }
 
 
@@ -78,7 +76,7 @@
 		margin-top : 1.2rem;
 		width : 22rem !important;
 	}
-	.h1 {
+	.search-title {
 		font-size :2em !important;
 	}
 }

@@ -8,6 +8,10 @@
  - display : block 상태에서의 가운데 정렬 
  - selecter : selecter naming   
  유튜브 : VEAMCAMP 참고 ( https://www.youtube.com/watch?v=iP8CqsSdXT0&list=PLMv8nY90ATZWQ5fbLJIdGB6ujWlUB37qa&index=2)
+
+ 19.10.28
+ 왜? 여기있는 style 문서를 ./components/img가 사용하는거지? 
+ 정확한 이유는 모르겠지만, 충돌하기 때문에 .img css 삭제
 */
 
 .search {
@@ -47,16 +51,6 @@
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	font-size: medium;
-}
-
-
-
-.img {
-	flex-grow : 1;
-	width : 98%;
-	margin-left : 0.25rem;
-	margin-right : 0.25rem;
-	margin-bottom : 0.5rem;
 }
 
 @media screen and (min-width: 768px){

@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputGroup, Input, Button, Spinner  } from 'reactstrap';
-import Testimg from '../../components/img';
+import Testimg from './components/img';
 import './style.css';
 
 class Search extends React.Component {

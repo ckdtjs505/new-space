@@ -1,1 +1,0 @@
-export const rootpath = "/new-space-web"

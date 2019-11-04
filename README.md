@@ -1,4 +1,4 @@
-## [New space web](https://ckdtjs505.github.io/new-space-web/)
+## [New space web](https://ckdtjs505.github.io/new-space/)
 
 신우주항공 정보를 제공하는 교육용 웹사이트
 
@@ -18,5 +18,5 @@
 ## Languages and Frameworks
 
  - javacript, css <br>
- - REACT <br>
+ - React <br>
  

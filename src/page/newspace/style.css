@@ -1,18 +1,18 @@
-@media screen and (min-width: 768px){
-	.navLink {
-		width: 100%;
-		margin: 0rem 1.8rem 0rem 1.8rem ;
-		text-align: center;
-	}
+@media screen and (min-width: 768px) {
+  .navLink {
+    width: 100%;
+    margin: 0rem 1.8rem 0rem 1.8rem;
+    text-align: center;
+  }
 }
 
 .newspace_main {
-	display: flex;
-	height : 972px;
-	font-family: 'Sunflower', sans-serif;
-	background: url('../../universe.jpg');
-	background-size : cover;
+  display: flex;
+  height: 972px;
+  font-family: "Sunflower", sans-serif;
+  background: url("../../universe.png");
+  background-size: cover;
 }
-.navLink{
-	text-align: center;
+.navLink {
+  text-align: center;
 }
